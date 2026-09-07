@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethan Roussel — Portfolio esport</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#15171c; --ink-2:#1c1f27; --ink-3:#22252e;
+    --ink-line: rgba(241,236,223,.14);
+    --paper:#f1ecdf; --paper-dim:#ded4bd;
+    --ink-text:#1c1a15; --paper-text:#f1ecdf;
+    --crimson:#c1432a; --teal:#2e7a6e; --gold:#c1912f;
+    --muted:#a6a190;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{background:var(--ink);color:var(--paper-text);font-family:'Inter',sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none;}
+  h1,h2,h3{font-family:'Fraunces',serif;margin:0;}
+  button{font-family:'Inter',sans-serif;cursor:pointer;}
+  img{max-width:100%;display:block;}
+
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:20px clamp(20px,5vw,56px);border-bottom:1px solid var(--ink-line);position:sticky;top:0;background:rgba(21,23,28,.9);backdrop-filter:blur(6px);z-index:20;}
+  .topbar .brand{font-family:'Fraunces',serif;font-size:18px;font-weight:600;display:flex;align-items:center;gap:10px;}
+  .topbar .brand img{width:28px;height:28px;border-radius:50%;object-fit:cover;}
+  .topbar .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--crimson);display:inline-block;}
+  .topbar nav{display:flex;gap:22px;}
+  .topbar nav a{font-size:14px;color:var(--muted);border-bottom:1px solid transparent;padding-bottom:2px;transition:color .15s,border-color .15s;}
+  .topbar nav a.current,.topbar nav a:hover{color:var(--paper-text);border-color:var(--paper-text);}
+
+  main{max-width:880px;margin:0 auto;padding:clamp(28px,6vw,64px) clamp(20px,5vw,56px) 100px;min-height:60vh;}
+  .view{animation:rise .5s ease both;}
+  @keyframes rise{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+  @media (prefers-reduced-motion: reduce){.view{animation:none;}}
+
+  /* ---- HOME ---- */
+  .hero{display:flex;align-items:flex-end;gap:26px;flex-wrap:wrap;}
+  .hero-photo{width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid var(--paper-dim);flex-shrink:0;}
+  .hero-photo.placeholder{display:flex;align-items:center;justify-content:center;background:var(--paper);color:var(--ink-text);font-family:'Fraunces',serif;font-size:32px;font-weight:600;}
+  .hero-text .hero-eyebrow{color:var(--muted);font-size:14px;margin-bottom:10px;}
+  .hero-text h1{font-size:clamp(34px,6.5vw,58px);font-weight:600;line-height:1.05;letter-spacing:-.01em;}
+  .hero p.bio{max-width:60ch;color:#cfc9b8;font-size:16.5px;margin-top:22px;}
+
+  .outlets{margin-top:52px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;}
+  .badge{position:relative;background:var(--paper);color:var(--ink-text);border-radius:3px;padding:26px 24px 22px;display:flex;flex-direction:column;gap:6px;box-shadow:0 18px 30px -20px rgba(0,0,0,.6);transition:transform .18s ease,box-shadow .18s ease;}
+  .badge:hover{transform:translateY(-4px) rotate(-.4deg);box-shadow:0 24px 34px -18px rgba(0,0,0,.65);}
+  .badge .clip{position:absolute;top:-10px;left:24px;width:34px;height:16px;background:var(--paper-dim);border-radius:3px 3px 0 0;}
+  .badge .clip::after{content:"";position:absolute;left:50%;top:3px;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:var(--ink);}
+  .badge .logo{width:38px;height:38px;object-fit:contain;margin-bottom:6px;}
+  .badge .role{font-size:12.5px;letter-spacing:.03em;color:#6b6656;}
+  .badge h2{font-size:24px;font-weight:600;margin-top:6px;}
+  .badge .meta{margin-top:14px;font-size:13.5px;color:#6b6656;border-top:1px dashed var(--paper-dim);padding-top:12px;}
+  .badge .go{margin-top:10px;font-size:14px;font-weight:500;}
+
+  /* ---- CRUMB ---- */
+  .crumb{font-size:13.5px;color:var(--muted);margin-bottom:26px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .crumb a:hover{color:var(--paper-text);text-decoration:underline;}
+  .crumb .sep{opacity:.5;}
+
+  /* ---- OUTLET ---- */
+  .outlet-head{display:flex;gap:18px;align-items:center;flex-wrap:wrap;}
+  .outlet-head img.logo{width:52px;height:52px;object-fit:contain;}
+  .outlet-head h1{font-size:clamp(30px,5vw,44px);font-weight:600;}
+  .outlet-desc{color:#cfc9b8;max-width:60ch;margin-top:16px;font-size:15.5px;}
+
+  .stubs{margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;}
+  .stub{position:relative;background:var(--ink-2);border:1px solid var(--ink-line);border-left:5px solid var(--stub-color,var(--crimson));border-radius:2px;padding:22px 22px 20px;transition:transform .16s ease,background .16s ease;}
+  .stub:hover{transform:translateY(-3px);background:var(--ink-3);}
+  .stub .count{font-family:'Fraunces',serif;font-size:34px;font-weight:600;color:var(--stub-color,var(--crimson));}
+  .stub .label{margin-top:4px;font-size:15.5px;font-weight:500;}
+  .stub .hint{margin-top:10px;font-size:13px;color:var(--muted);}
+
+  .empty-box{margin-top:40px;border:1px dashed var(--ink-line);border-radius:3px;padding:30px 28px;color:#cfc9b8;font-size:15px;}
+  .empty-box b{color:var(--paper-text);}
+
+  /* ---- CATEGORY ---- */
+  .cat-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+  .cat-head h1{font-size:clamp(28px,5vw,40px);font-weight:600;color:var(--cat-color,var(--crimson));}
+  .cat-head .n{color:var(--muted);font-size:15px;}
+  .articles{margin-top:36px;display:flex;flex-direction:column;}
+  .article{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 4px;border-bottom:1px solid var(--ink-line);transition:padding-left .15s ease;}
+  .article:hover{padding-left:10px;}
+  .tag{display:inline-block;font-size:11.5px;color:var(--cat-color,var(--crimson));border:1px solid var(--cat-color,var(--crimson));border-radius:20px;padding:2px 10px;margin-bottom:9px;}
+  .article h3{font-size:18px;font-weight:500;line-height:1.35;}
+  .article .read{flex-shrink:0;font-size:13.5px;color:var(--muted);white-space:nowrap;border-bottom:1px solid transparent;}
+  .article:hover .read{color:var(--paper-text);border-color:var(--paper-text);}
+
+  /* ---- ABOUT (scrollytelling) ---- */
+  .about-intro h1{font-size:clamp(32px,6vw,50px);font-weight:600;}
+  .about-intro p{color:#cfc9b8;max-width:60ch;margin-top:16px;font-size:16px;}
+  .panels{margin-top:48px;display:flex;flex-direction:column;gap:2px;}
+  .panel{padding:44px 0;border-top:1px solid var(--ink-line);opacity:0;transform:translateX(-24px);transition:opacity .6s ease,transform .6s ease;}
+  .panel:nth-child(even){transform:translateX(24px);}
+  .panel.in-view{opacity:1;transform:translateX(0);}
+  .panel .num{font-family:'Fraunces',serif;font-size:15px;color:var(--muted);}
+  .panel h2{font-size:clamp(22px,4vw,30px);font-weight:600;margin-top:8px;}
+  .panel p{color:#cfc9b8;max-width:62ch;margin-top:14px;font-size:15.5px;}
+  @media (prefers-reduced-motion: reduce){.panel{opacity:1;transform:none;transition:none;}}
+
+  /* ---- CONTACT ---- */
+  .contact-links{margin-top:40px;display:flex;flex-direction:column;gap:2px;}
+  .contact-link{display:flex;align-items:center;justify-content:space-between;padding:20px 4px;border-top:1px solid var(--ink-line);transition:padding-left .15s ease;}
+  .contact-link:last-child{border-bottom:1px solid var(--ink-line);}
+  .contact-link:hover{padding-left:10px;color:var(--gold);}
+  .contact-link .platform{font-size:13px;color:var(--muted);}
+  .contact-link h3{font-size:18px;font-weight:500;margin-top:4px;}
+
+  /* ---- FOOTER ---- */
+  footer{border-top:1px solid var(--ink-line);padding:44px clamp(20px,5vw,56px) 30px;}
+  .foot-grid{max-width:880px;margin:0 auto;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;}
+  .foot-grid h3{font-size:18px;font-weight:600;}
+  .foot-grid p{color:var(--muted);font-size:13.5px;margin-top:10px;max-width:34ch;}
+  .foot-links{display:flex;gap:20px;flex-wrap:wrap;}
+  .foot-links a{font-size:13.5px;color:var(--muted);}
+  .foot-links a:hover{color:var(--paper-text);}
+  .foot-bottom{max-width:880px;margin:30px auto 0;padding-top:18px;border-top:1px solid var(--ink-line);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);}
+  .foot-bottom button{background:none;border:none;color:var(--muted);font-size:12.5px;padding:0;}
+  .foot-bottom button:hover{color:var(--paper-text);}
+
+  /* ---- EDIT MODE ---- */
+  .edit-overlay{position:fixed;inset:0;background:rgba(10,11,14,.72);z-index:100;display:flex;justify-content:flex-end;}
+  .edit-panel{width:min(520px,100%);height:100%;background:var(--ink-2);overflow-y:auto;padding:26px 26px 80px;border-left:1px solid var(--ink-line);}
+  .edit-panel h2{font-size:22px;}
+  .edit-panel .close{position:absolute;top:20px;right:24px;background:none;border:none;color:var(--paper-text);font-size:22px;}
+  .edit-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 24px;}
+  .edit-tabs button{background:var(--ink-3);border:1px solid var(--ink-line);color:var(--muted);padding:7px 13px;border-radius:20px;font-size:13px;}
+  .edit-tabs button.active{background:var(--paper);color:var(--ink-text);border-color:var(--paper);}
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-size:12.5px;color:var(--muted);margin-bottom:6px;}
+  .field input[type=text],.field input[type=email],.field input[type=url],.field textarea,.field select{
+    width:100%;background:var(--ink);border:1px solid var(--ink-line);color:var(--paper-text);padding:9px 11px;border-radius:4px;font-size:14px;font-family:'Inter',sans-serif;
+  }
+  .field textarea{resize:vertical;min-height:70px;}
+  .field input[type=file]{color:var(--muted);font-size:12.5px;}
+  .card-edit{border:1px solid var(--ink-line);border-radius:4px;padding:16px;margin-bottom:14px;background:var(--ink-3);}
+  .card-edit-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
+  .card-edit-head strong{font-size:13.5px;}
+  .btn{background:var(--paper);color:var(--ink-text);border:none;padding:9px 15px;border-radius:4px;font-size:13.5px;font-weight:500;}
+  .btn.secondary{background:none;border:1px solid var(--ink-line);color:var(--paper-text);}
+  .btn.danger{background:none;border:1px solid var(--crimson);color:var(--crimson);}
+  .btn.small{padding:5px 10px;font-size:12px;}
+  .actions-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;}
+  .img-preview{width:56px;height:56px;object-fit:cover;border-radius:6px;margin-bottom:8px;background:var(--ink);}
+  .hr{height:1px;background:var(--ink-line);margin:26px 0;}
+  .note{font-size:12px;color:var(--muted);margin-top:6px;}
+  .save-bar{position:sticky;bottom:-80px;background:var(--ink-2);padding:14px 0;margin-top:20px;display:flex;gap:10px;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="#/" class="brand" id="brandLink"><span class="dot"></span><span id="brandName">Portfolio</span></a>
+  <nav>
+    <a href="#/" data-route="home">Accueil</a>
+    <a href="#/about" data-route="about">À propos</a>
+    <a href="#/contact" data-route="contact">Contact</a>
+  </nav>
+</div>
+
+<main id="app"></main>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <h3 id="footName">Portfolio</h3>
+      <p id="footTagline">Rédacteur esport — interviews, actualités et suivi de compétitions.</p>
+    </div>
+    <div class="foot-links" id="footLinks"></div>
+  </div>
+  <div class="foot-bottom">
+    <span id="footCopy">© 2026 — Tous droits réservés.</span>
+    <button id="editTrigger">⚙ Gérer le contenu</button>
+  </div>
+</footer>
+
+<div id="editRoot"></div>
+
+<script>
+/* ============================================================
+   TOUT LE CONTENU DE CE SITE SE MODIFIE DEPUIS "Gérer le
+   contenu" EN BAS DE PAGE (mot de passe par défaut ci-dessous,
+   modifiable ensuite depuis le panneau lui-même).
+   Ce bloc DEFAULT_DATA ne sert qu'à amorcer le site la toute
+   première fois : une fois que tu as sauvegardé une modification
+   depuis le panneau, c'est cette version enregistrée qui prend
+   le dessus, pas ce bloc.
+   ============================================================ */
+
+const DEFAULT_DATA = {
+  editPassword: "louston2026",
+  author: {
+    name: "Ethan Roussel",
+    aliases: "alias Loukas / Louston",
+    bio: "Rédacteur esport. J'écris des interviews, des actualités et des comptes-rendus de compétitions, principalement autour de League of Legends, Valorant et CS2.",
+    photo: ""
+  },
+  contact: {
+    email: "",
+    instagram: "",
+    x: "",
+    linkedin: ""
+  },
+  about: [
+    { title: "Les débuts", text: "Tout a commencé sur Matepedia, un site fan dédié à Gentle Mates, avec quelques articles pour poser les premières bases de l'écriture esport." },
+    { title: "Parlons Esport", text: "Rédacteur bénévole chez Parlons Esport : interviews de joueurs professionnels, suivi d'actualités et comptes-rendus de compétitions sur League of Legends, Valorant et CS2." },
+    { title: "La suite", text: "Continuer à couvrir la scène esport, multiplier les rencontres avec les acteurs du milieu et faire grandir ce portfolio, article après article." }
+  ],
+  outlets: [
+    {
+      id: "parlons-esport", name: "Parlons Esport", role: "Rédacteur", logo: "",
+      description: "Média esport francophone. Interviews de joueurs, suivi de compétitions et actualités, principalement sur League of Legends, Valorant et CS2.",
+      categories: [
+        { id: "interviews", label: "Interviews", color: "var(--crimson)", articles: [
+          { title: "Labrov au MSI : « Je suis confiant sur le fait qu’on puisse atteindre le top 4 », interview avec le support de G2 Esports", tag: "League of Legends", url: "https://parlonsesport.com/labrov-au-msi-je-suis-confiant-sur-le-fait-quon-puisse-atteindre-le-top-4-interview-avec-le-support-de-g2-esports/" },
+          { title: "Ethan à l’EWC : « Qu’ils nous acclament ou nous huent, ça ne change rien »", tag: "Esports World Cup", url: "https://parlonsesport.com/ethan-a-lewc-quils-nous-acclament-ou-nous-huent-ca-ne-change-rien/" },
+          { title: "Dambi à l’EWC : « Je vais essayer de devenir le prochain meilleur sur Neon au monde »", tag: "Valorant", url: "https://parlonsesport.com/dambi-a-lewc-je-vais-essayer-de-devenir-le-prochain-meilleur-sur-neon-au-monde/" },
+          { title: "Bonkar à l’EWC : « Le Stage 2 et les Champions, c’est ça qui compte pour nous »", tag: "Valorant", url: "https://parlonsesport.com/bonkar-a-lewc-le-stage-2-et-les-champions-cest-ca-qui-compte-pour-nous/" },
+          { title: "Team Liquid Kicks : « La fin de mon passage chez Vitality, c’était difficile », VCT EMEA", tag: "Valorant", url: "https://parlonsesport.com/team-liquid-kicks-la-fin-de-mon-passage-chez-vitality-c-etait-difficile-vctemea/" },
+          { title: "EXIT : « Je pense que je suis l’un des meilleurs joueurs au monde », avec Waylay", tag: "Valorant", url: "https://parlonsesport.com/exit-je-pense-que-je-suis-lun-des-meilleurs-joueurs-au-monde-avec-waylay/" },
+          { title: "Riens : « Lors du match contre KC, on n’avait aucune confiance »", tag: "League of Legends", url: "https://parlonsesport.com/riens-lors-du-match-contre-kc-on-navait-aucune-confiance/" },
+          { title: "Caliste : « J’aimerais une nouvelle finale contre G2 à Nice et qu’on les batte cette fois », LEC", tag: "League of Legends", url: "https://parlonsesport.com/caliste-jaimerais-une-nouvelle-finale-contre-g2-a-nice-et-quon-les-batte-cette-fois-lec/" },
+          { title: "S0pp : « On doit avoir plus de confiance si on veut se qualifier aux Champions »", tag: "Valorant", url: "https://parlonsesport.com/s0pp-on-doit-avoir-plus-de-confiance-si-on-veut-se-qualifier-aux-champions/" },
+          { title: "Reapered : « On pouvait soit s’effondrer soit rebondir après le MSI »", tag: "League of Legends", url: "https://parlonsesport.com/reapered-on-pouvait-soit-seffondrer-soit-rebondir-apres-le-msi/" },
+          { title: "Isma : « On était un peu bloqués dans le top 4-5, il fallait changer la dynamique »", tag: "League of Legends", url: "https://parlonsesport.com/isma-on-etait-un-peu-bloques-dans-le-top-4-5-il-fallait-changer-la-dynamique/" },
+          { title: "kamyk : « Je ne peux pas imaginer une meilleure fanbase que celle de Joblife »", tag: "Valorant", url: "https://parlonsesport.com/kamyk-je-ne-peux-pas-imaginer-une-meilleure-fanbase-que-celle-de-joblife/" }
+        ]},
+        { id: "actualites", label: "Actualités", color: "var(--teal)", articles: [
+          { title: "Gentle Mates quitte CS2 : les raisons d’un départ inattendu", tag: "CS2", url: "https://parlonsesport.com/gentle-mates-quitte-cs2-les-raisons-dun-depart-inattendu/" }
+        ]},
+        { id: "competitions", label: "Compétitions", color: "var(--gold)", articles: [
+          { title: "Vitality tombe en quart de finale du Major de Cologne contre Falcons Esport", tag: "CS2", url: "https://parlonsesport.com/vitality-tombe-en-quart-de-finale-du-major-de-cologne-contre-falcons-esport/" },
+          { title: "COD Champs 2026 : FaZe Vegas décroche le titre, Paris Gentle Mates au pied du podium et HyDra maudit", tag: "Call of Duty", url: "https://parlonsesport.com/champs-2026-faze-vegas-decroche-le-titre-paris-gentle-mates-au-pied-du-podium-et-hydra-maudit/" }
+        ]}
+      ]
+    },
+    {
+      id: "matepedia", name: "Matepedia", role: "Rédacteur", logo: "",
+      description: "Site fan dédié à Gentle Mates, premières publications.",
+      categories: []
+    }
+  ]
+};
+
+/* ================= STOCKAGE ================= */
+let DATA = null;
+let editUnlocked = false;
+let activeEditTab = "profil";
+
+async function loadData(){
+  try{
+    if (window.storage){
+      const res = await window.storage.get('portfolio-data', true);
+      DATA = res ? JSON.parse(res.value) : structuredClone(DEFAULT_DATA);
+      if (!res) await window.storage.set('portfolio-data', JSON.stringify(DATA), true);
+    } else {
+      DATA = structuredClone(DEFAULT_DATA);
+    }
+  } catch(e){
+    DATA = structuredClone(DEFAULT_DATA);
+  }
+  renderChrome();
+  render();
+}
+
+async function saveData(){
+  try{
+    if (window.storage){
+      await window.storage.set('portfolio-data', JSON.stringify(DATA), true);
+    }
+  } catch(e){ /* stockage indisponible : les changements restent visibles jusqu'au rafraîchissement */ }
+  renderChrome();
+  render();
+  renderEdit();
+}
+
+/* ================= UTILITAIRES ================= */
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function uid(){ return Math.random().toString(36).slice(2,8); }
+
+function compressImage(file, maxDim, quality){
+  return new Promise((resolve,reject)=>{
+    const reader = new FileReader();
+    reader.onload = () => {
+      const img = new Image();
+      img.onload = () => {
+        let w = img.width, h = img.height;
+        if (w > h && w > maxDim){ h = h*(maxDim/w); w = maxDim; }
+        else if (h >= w && h > maxDim){ w = w*(maxDim/h); h = maxDim; }
+        const canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+        resolve(canvas.toDataURL('image/jpeg', quality));
+      };
+      img.onerror = reject;
+      img.src = reader.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+/* ================= CHROME (nav / footer) ================= */
+function renderChrome(){
+  document.getElementById('brandName').textContent = DATA.author.name;
+  document.getElementById('footName').textContent = DATA.author.name;
+  document.getElementById('footTagline').textContent = DATA.author.bio.length > 90 ? DATA.author.bio.slice(0,87)+'…' : DATA.author.bio;
+  document.getElementById('footCopy').textContent = "© " + new Date().getFullYear() + " " + DATA.author.name + " — Tous droits réservés.";
+  const links = [];
+  if (DATA.contact.email) links.push(['Email','mailto:'+DATA.contact.email]);
+  if (DATA.contact.instagram) links.push(['Instagram', DATA.contact.instagram]);
+  if (DATA.contact.x) links.push(['X', DATA.contact.x]);
+  if (DATA.contact.linkedin) links.push(['LinkedIn', DATA.contact.linkedin]);
+  document.getElementById('footLinks').innerHTML = links.map(l => `<a href="${esc(l[1])}" target="_blank" rel="noopener">${l[0]}</a>`).join('') || `<a href="#/contact">Ajouter mes contacts</a>`;
+  document.querySelectorAll('.topbar nav a').forEach(a=>{
+    const route = (location.hash.replace(/^#\/?/,'').split('/')[0]) || 'home';
+    a.classList.toggle('current', a.dataset.route === route);
+  });
+}
+
+/* ================= PAGES PUBLIQUES ================= */
+function findOutlet(id){ return DATA.outlets.find(o => o.id === id); }
+function findCategory(outlet, id){ return outlet.categories.find(c => c.id === id); }
+function countArticles(outlet){ return outlet.categories.reduce((n,c)=> n+c.articles.length, 0); }
+
+function renderHome(){
+  const initials = DATA.author.name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
+  return `
+    <div class="view">
+      <div class="hero">
+        ${DATA.author.photo
+          ? `<img class="hero-photo" src="${DATA.author.photo}" alt="${esc(DATA.author.name)}">`
+          : `<div class="hero-photo placeholder">${esc(initials)}</div>`}
+        <div class="hero-text">
+          <div class="hero-eyebrow">Portfolio</div>
+          <h1>${esc(DATA.author.name)}</h1>
+        </div>
+      </div>
+      <p class="bio">${esc(DATA.author.bio)}${DATA.author.aliases ? ' ('+esc(DATA.author.aliases)+')' : ''}</p>
+      <div class="outlets">
+        ${DATA.outlets.map(o => `
+          <a class="badge" href="#/outlet/${o.id}">
+            ${o.logo ? `<img class="logo" src="${o.logo}" alt="${esc(o.name)}">` : `<span class="clip"></span>`}
+            <span class="role">${esc(o.role)}</span>
+            <h2>${esc(o.name)}</h2>
+            <span class="meta">${countArticles(o)} article${countArticles(o)>1?'s':''} publié${countArticles(o)>1?'s':''}</span>
+            <span class="go">Voir le portfolio →</span>
+          </a>
+        `).join('')}
+      </div>
+    </div>`;
+}
+
+function renderOutlet(outlet){
+  return `
+    <div class="view">
+      <div class="crumb"><a href="#/">Accueil</a><span class="sep">/</span><span>${esc(outlet.name)}</span></div>
+      <div class="outlet-head">
+        ${outlet.logo ? `<img class="logo" src="${outlet.logo}" alt="">` : ''}
+        <h1>${esc(outlet.name)}</h1>
+      </div>
+      <p class="outlet-desc">${esc(outlet.description)}</p>
+      ${outlet.categories.length ? `
+        <div class="stubs">
+          ${outlet.categories.map(c => `
+            <a class="stub" style="--stub-color:${c.color}" href="#/outlet/${outlet.id}/${c.id}">
+              <div class="count">${c.articles.length}</div>
+              <div class="label">${esc(c.label)}</div>
+              <div class="hint">Voir les articles</div>
+            </a>`).join('')}
+        </div>` : `
+        <div class="empty-box"><b>Portfolio à venir.</b> Les articles écrits pour ${esc(outlet.name)} seront ajoutés ici prochainement.</div>`}
+    </div>`;
+}
+
+function renderCategory(outlet, cat){
+  return `
+    <div class="view">
+      <div class="crumb">
+        <a href="#/">Accueil</a><span class="sep">/</span>
+        <a href="#/outlet/${outlet.id}">${esc(outlet.name)}</a><span class="sep">/</span>
+        <span>${esc(cat.label)}</span>
+      </div>
+      <div class="cat-head" style="--cat-color:${cat.color}">
+        <h1>${esc(cat.label)}</h1><span class="n">${cat.articles.length} article${cat.articles.length>1?'s':''}</span>
+      </div>
+      <div class="articles" style="--cat-color:${cat.color}">
+        ${cat.articles.map(a => `
+          <a class="article" href="${esc(a.url)}" target="_blank" rel="noopener">
+            <div class="left"><span class="tag">${esc(a.tag)}</span><h3>${esc(a.title)}</h3></div>
+            <span class="read">Lire ↗</span>
+          </a>`).join('')}
+      </div>
+    </div>`;
+}
+
+function renderAbout(){
+  return `
+    <div class="view">
+      <div class="about-intro">
+        <div class="hero-eyebrow">À propos</div>
+        <h1>Mon parcours</h1>
+        <p>${esc(DATA.author.bio)}</p>
+      </div>
+      <div class="panels">
+        ${DATA.about.map((p,i) => `
+          <div class="panel" data-panel>
+            <div class="num">0${i+1}</div>
+            <h2>${esc(p.title)}</h2>
+            <p>${esc(p.text)}</p>
+          </div>`).join('')}
+      </div>
+    </div>`;
+}
+
+function renderContact(){
+  const items = [];
+  if (DATA.contact.email) items.push(['Email', DATA.contact.email, 'mailto:'+DATA.contact.email]);
+  if (DATA.contact.instagram) items.push(['Instagram', DATA.contact.instagram, DATA.contact.instagram]);
+  if (DATA.contact.x) items.push(['X', DATA.contact.x, DATA.contact.x]);
+  if (DATA.contact.linkedin) items.push(['LinkedIn', DATA.contact.linkedin, DATA.contact.linkedin]);
+  return `
+    <div class="view">
+      <div class="hero-eyebrow">Contact</div>
+      <h1>Discutons</h1>
+      <p class="bio" style="margin-top:16px;">Le meilleur moyen de me contacter, pour une interview, une collaboration ou juste échanger esport.</p>
+      ${items.length ? `
+        <div class="contact-links">
+          ${items.map(i => `
+            <a class="contact-link" href="${esc(i[2])}" target="_blank" rel="noopener">
+              <div><span class="platform">${i[0]}</span><h3>${esc(i[1])}</h3></div>
+              <span class="read">Ouvrir ↗</span>
+            </a>`).join('')}
+        </div>` : `
+        <div class="empty-box"><b>Aucun contact renseigné pour le moment.</b> Ajoute tes réseaux depuis « Gérer le contenu » en bas de page.</div>`}
+    </div>`;
+}
+
+function render(){
+  const app = document.getElementById('app');
+  const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
+
+  if (parts[0] === 'about'){ app.innerHTML = renderAbout(); setupScrollReveal(); renderChrome(); return; }
+  if (parts[0] === 'contact'){ app.innerHTML = renderContact(); renderChrome(); return; }
+
+  if (parts[0] === 'outlet' && parts[1]){
+    const outlet = findOutlet(parts[1]);
+    if (!outlet){ app.innerHTML = renderHome(); renderChrome(); return; }
+    if (parts[2]){
+      const cat = findCategory(outlet, parts[2]);
+      app.innerHTML = cat ? renderCategory(outlet, cat) : renderOutlet(outlet);
+      renderChrome(); return;
+    }
+    app.innerHTML = renderOutlet(outlet); renderChrome(); return;
+  }
+  app.innerHTML = renderHome();
+  renderChrome();
+}
+
+function setupScrollReveal(){
+  const panels = document.querySelectorAll('[data-panel]');
+  if (!('IntersectionObserver' in window)){ panels.forEach(p=>p.classList.add('in-view')); return; }
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+  }, { threshold: .2 });
+  panels.forEach(p => obs.observe(p));
+}
+
+window.addEventListener('hashchange', render);
+
+/* ================= MODE ÉDITION ================= */
+document.getElementById('editTrigger').addEventListener('click', () => {
+  if (editUnlocked){ renderEdit(); return; }
+  const pwd = prompt("Mot de passe d'édition :");
+  if (pwd === null) return;
+  if (pwd === DATA.editPassword){ editUnlocked = true; renderEdit(); }
+  else alert("Mot de passe incorrect.");
+});
+
+function closeEdit(){ document.getElementById('editRoot').innerHTML = ''; }
+
+function renderEdit(){
+  const root = document.getElementById('editRoot');
+  root.innerHTML = `
+    <div class="edit-overlay" id="editOverlay">
+      <div class="edit-panel" style="position:relative;">
+        <button class="close" id="editClose">×</button>
+        <h2>Gérer le contenu</h2>
+        <div class="note">Ces modifications sont visibles par toutes les personnes qui ouvrent ce site tant que le stockage est disponible. L'accès est protégé par mot de passe uniquement (pas de vraie authentification serveur) — évite de le partager publiquement.</div>
+        <div class="edit-tabs">
+          ${['profil','medias','apropos','contact','securite'].map(t => `<button data-tab="${t}" class="${activeEditTab===t?'active':''}">${tabLabel(t)}</button>`).join('')}
+        </div>
+        <div id="editBody"></div>
+      </div>
+    </div>`;
+  document.getElementById('editOverlay').addEventListener('click', (e)=>{ if (e.target.id==='editOverlay') closeEdit(); });
+  document.getElementById('editClose').addEventListener('click', closeEdit);
+  root.querySelectorAll('.edit-tabs button').forEach(b => b.addEventListener('click', () => { activeEditTab = b.dataset.tab; renderEdit(); }));
+  renderEditBody();
+}
+
+function tabLabel(t){
+  return { profil:'Profil', medias:'Médias', apropos:'À propos', contact:'Contact', securite:'Sécurité' }[t];
+}
+
+function renderEditBody(){
+  const body = document.getElementById('editBody');
+  if (activeEditTab === 'profil') body.innerHTML = editProfilHTML();
+  if (activeEditTab === 'medias') body.innerHTML = editMediasHTML();
+  if (activeEditTab === 'apropos') body.innerHTML = editAboutHTML();
+  if (activeEditTab === 'contact') body.innerHTML = editContactHTML();
+  if (activeEditTab === 'securite') body.innerHTML = editSecurityHTML();
+  bindEditEvents();
+}
+
+function editProfilHTML(){
+  return `
+    <div class="field"><label>Nom</label><input type="text" data-bind="author.name" value="${esc(DATA.author.name)}"></div>
+    <div class="field"><label>Alias / pseudos</label><input type="text" data-bind="author.aliases" value="${esc(DATA.author.aliases)}"></div>
+    <div class="field"><label>Bio courte</label><textarea data-bind="author.bio">${esc(DATA.author.bio)}</textarea></div>
+    <div class="field">
+      <label>Photo de profil</label>
+      ${DATA.author.photo ? `<img class="img-preview" src="${DATA.author.photo}">` : ''}
+      <input type="file" accept="image/*" data-photo="author.photo">
+    </div>
+    <div class="save-bar"><button class="btn" id="saveBtn">Enregistrer</button></div>`;
+}
+
+function editMediasHTML(){
+  let html = DATA.outlets.map((o, oi) => `
+    <div class="card-edit">
+      <div class="card-edit-head"><strong>${esc(o.name) || 'Nouveau média'}</strong>
+        <button class="btn danger small" data-remove-outlet="${oi}">Supprimer</button>
+      </div>
+      <div class="field"><label>Nom du média</label><input type="text" data-bind="outlets.${oi}.name" value="${esc(o.name)}"></div>
+      <div class="field"><label>Ton rôle</label><input type="text" data-bind="outlets.${oi}.role" value="${esc(o.role)}"></div>
+      <div class="field"><label>Description</label><textarea data-bind="outlets.${oi}.description">${esc(o.description)}</textarea></div>
+      <div class="field">
+        <label>Logo</label>
+        ${o.logo ? `<img class="img-preview" src="${o.logo}">` : ''}
+        <input type="file" accept="image/*" data-photo="outlets.${oi}.logo">
+      </div>
+      <div class="hr"></div>
+      <label style="font-size:12.5px;color:var(--muted);">Rubriques</label>
+      ${o.categories.map((c, ci) => `
+        <div class="card-edit" style="background:var(--ink);">
+          <div class="card-edit-head"><strong>${esc(c.label) || 'Rubrique'} (${c.articles.length})</strong>
+            <button class="btn danger small" data-remove-cat="${oi}.${ci}">Supprimer</button>
+          </div>
+          <div class="field"><label>Nom de la rubrique</label><input type="text" data-bind="outlets.${oi}.categories.${ci}.label" value="${esc(c.label)}"></div>
+          <div class="field"><label>Couleur</label>
+            <select data-bind="outlets.${oi}.categories.${ci}.color">
+              <option value="var(--crimson)" ${c.color==='var(--crimson)'?'selected':''}>Rouge</option>
+              <option value="var(--teal)" ${c.color==='var(--teal)'?'selected':''}>Vert</option>
+              <option value="var(--gold)" ${c.color==='var(--gold)'?'selected':''}>Or</option>
+            </select>
+          </div>
+          ${c.articles.map((a, ai) => `
+            <div class="card-edit">
+              <div class="card-edit-head"><strong>Article</strong>
+                <button class="btn danger small" data-remove-article="${oi}.${ci}.${ai}">Supprimer</button>
+              </div>
+              <div class="field"><label>Titre</label><input type="text" data-bind="outlets.${oi}.categories.${ci}.articles.${ai}.title" value="${esc(a.title)}"></div>
+              <div class="field"><label>Tag (jeu / évènement)</label><input type="text" data-bind="outlets.${oi}.categories.${ci}.articles.${ai}.tag" value="${esc(a.tag)}"></div>
+              <div class="field"><label>Lien de l'article</label><input type="url" data-bind="outlets.${oi}.categories.${ci}.articles.${ai}.url" value="${esc(a.url)}"></div>
+            </div>`).join('')}
+          <button class="btn secondary small" data-add-article="${oi}.${ci}">+ Ajouter un article</button>
+        </div>`).join('')}
+      <button class="btn secondary small" data-add-cat="${oi}">+ Ajouter une rubrique</button>
+    </div>`).join('');
+  html += `<button class="btn secondary" id="addOutletBtn">+ Ajouter un média</button>
+    <div class="save-bar"><button class="btn" id="saveBtn">Enregistrer</button></div>`;
+  return html;
+}
+
+function editAboutHTML(){
+  let html = DATA.about.map((p, i) => `
+    <div class="card-edit">
+      <div class="card-edit-head"><strong>Volet ${i+1}</strong>
+        <button class="btn danger small" data-remove-about="${i}">Supprimer</button>
+      </div>
+      <div class="field"><label>Titre</label><input type="text" data-bind="about.${i}.title" value="${esc(p.title)}"></div>
+      <div class="field"><label>Texte</label><textarea data-bind="about.${i}.text">${esc(p.text)}</textarea></div>
+    </div>`).join('');
+  html += `<button class="btn secondary" id="addAboutBtn">+ Ajouter un volet</button>
+    <div class="save-bar"><button class="btn" id="saveBtn">Enregistrer</button></div>`;
+  return html;
+}
+
+function editContactHTML(){
+  return `
+    <div class="field"><label>Email</label><input type="email" data-bind="contact.email" value="${esc(DATA.contact.email)}"></div>
+    <div class="field"><label>Instagram (lien complet)</label><input type="url" data-bind="contact.instagram" value="${esc(DATA.contact.instagram)}"></div>
+    <div class="field"><label>X / Twitter (lien complet)</label><input type="url" data-bind="contact.x" value="${esc(DATA.contact.x)}"></div>
+    <div class="field"><label>LinkedIn (lien complet)</label><input type="url" data-bind="contact.linkedin" value="${esc(DATA.contact.linkedin)}"></div>
+    <div class="save-bar"><button class="btn" id="saveBtn">Enregistrer</button></div>`;
+}
+
+function editSecurityHTML(){
+  return `
+    <div class="field"><label>Mot de passe d'édition</label><input type="text" data-bind="editPassword" value="${esc(DATA.editPassword)}"></div>
+    <div class="note">Ce mot de passe protège seulement l'affichage du panneau d'édition dans ce navigateur : il n'y a pas de serveur derrière, donc considère-le comme un verrou simple plutôt qu'une vraie sécurité.</div>
+    <div class="save-bar"><button class="btn" id="saveBtn">Enregistrer</button></div>`;
+}
+
+function setPath(obj, path, value){
+  const keys = path.split('.');
+  let cur = obj;
+  for (let i=0;i<keys.length-1;i++){ cur = cur[keys[i]]; }
+  cur[keys[keys.length-1]] = value;
+}
+
+function bindEditEvents(){
+  const body = document.getElementById('editBody');
+
+  body.querySelectorAll('[data-bind]').forEach(el => {
+    el.addEventListener('input', () => setPath(DATA, el.dataset.bind, el.value));
+  });
+
+  body.querySelectorAll('[data-photo]').forEach(el => {
+    el.addEventListener('change', async () => {
+      if (!el.files[0]) return;
+      try{
+        const dataUrl = await compressImage(el.files[0], 500, .82);
+        setPath(DATA, el.dataset.photo, dataUrl);
+        renderEditBody();
+      } catch(e){ alert("Impossible de lire cette image."); }
+    });
+  });
+
+  body.querySelectorAll('[data-remove-outlet]').forEach(el => el.addEventListener('click', () => {
+    if (confirm('Supprimer ce média et tout son contenu ?')){ DATA.outlets.splice(+el.dataset.removeOutlet,1); renderEditBody(); }
+  }));
+  body.querySelectorAll('[data-remove-cat]').forEach(el => el.addEventListener('click', () => {
+    const [oi,ci] = el.dataset.removeCat.split('.').map(Number);
+    if (confirm('Supprimer cette rubrique ?')){ DATA.outlets[oi].categories.splice(ci,1); renderEditBody(); }
+  }));
+  body.querySelectorAll('[data-remove-article]').forEach(el => el.addEventListener('click', () => {
+    const [oi,ci,ai] = el.dataset.removeArticle.split('.').map(Number);
+    DATA.outlets[oi].categories[ci].articles.splice(ai,1); renderEditBody();
+  }));
+  body.querySelectorAll('[data-remove-about]').forEach(el => el.addEventListener('click', () => {
+    DATA.about.splice(+el.dataset.removeAbout,1); renderEditBody();
+  }));
+  body.querySelectorAll('[data-add-cat]').forEach(el => el.addEventListener('click', () => {
+    DATA.outlets[+el.dataset.addCat].categories.push({ id:'cat-'+uid(), label:'Nouvelle rubrique', color:'var(--crimson)', articles:[] });
+    renderEditBody();
+  }));
+  body.querySelectorAll('[data-add-article]').forEach(el => el.addEventListener('click', () => {
+    const [oi,ci] = el.dataset.addArticle.split('.').map(Number);
+    DATA.outlets[oi].categories[ci].articles.push({ title:'Nouvel article', tag:'', url:'' });
+    renderEditBody();
+  }));
+
+  const addOutletBtn = document.getElementById('addOutletBtn');
+  if (addOutletBtn) addOutletBtn.addEventListener('click', () => {
+    DATA.outlets.push({ id:'media-'+uid(), name:'Nouveau média', role:'Rédacteur', logo:'', description:'', categories:[] });
+    renderEditBody();
+  });
+  const addAboutBtn = document.getElementById('addAboutBtn');
+  if (addAboutBtn) addAboutBtn.addEventListener('click', () => {
+    DATA.about.push({ title:'Nouveau volet', text:'' });
+    renderEditBody();
+  });
+
+  const saveBtn = document.getElementById('saveBtn');
+  if (saveBtn) saveBtn.addEventListener('click', async () => {
+    saveBtn.textContent = 'Enregistrement…';
+    await saveData();
+  });
+}
+
+loadData();
+</script>
+</body>
+</html>
