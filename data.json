@@ -1,0 +1,202 @@
+{
+  "editPassword": "louston2026",
+  "github": {
+    "owner": "",
+    "repo": "",
+    "branch": "main",
+    "path": "data.json"
+  },
+  "author": {
+    "name": "Ethan Roussel",
+    "aliases": "alias Loukas / Louston",
+    "bio": "Rédacteur esport. J'écris des interviews, des actualités et des comptes-rendus de compétitions, principalement autour de League of Legends, Valorant et CS2.",
+    "photo": "assets/photo-profil.jpg"
+  },
+  "contact": {
+    "email": "ethanroussel08@gmail.com",
+    "instagram": "https://www.instagram.com/ethan_rsl8/",
+    "x": "https://x.com/M8_Loukas",
+    "linkedin": "https://www.linkedin.com/in/ethan-roussel-162911334/"
+  },
+  "about": [
+    {
+      "title": "Stage à France 3 Saint-Étienne",
+      "text": "Tout commence par un stage à France 3. Cela me permet de mettre un premier pas dans le journalisme. Je découvre aussi bien la rédaction, le montage, la voix off, le reportage, etc. Cette expérience met en évidence ma vocation de devenir journaliste."
+    },
+    {
+      "title": "School of Economics Saint-Étienne",
+      "text": "Mes contacts journalistes m’ont conseillé de faire une licence puis de m’orienter vers une école de journalisme. Je suis actuellement en L3 Économie, parcours International. En parallèle de mes études, je travaille les week-ends en tant que responsable d’accueil et de caisse. Pour valider mon diplôme, il faut que je parte en Erasmus, et j’ai donc décidé d’aller au Luxembourg pendant six mois."
+    },
+    {
+      "title": "Matepedia",
+      "text": "Lier une vocation de journaliste et l’économie, cela fait sens, mais avec une passion comme l’esport, ce serait encore mieux. Je suis l’esport sur différents jeux depuis maintenant quelques années et, en suivant Gentle Mates, il était naturel de penser que le journalisme esport était envisageable. J’ai vu le projet de Matepedia, dont la version bêta m’a permis de commencer à écrire autour du club. Ce média communautaire m’a notamment donné l’opportunité de couvrir le plus grand Major de la Call of Duty League à Paris La Défense Arena."
+    },
+    {
+      "title": "Parlons Esport",
+      "text": "En raison d’une maintenance, j’ai décidé de me tourner vers des médias plus professionnalisants, qui me permettaient de découvrir de nouvelles perspectives. C’est pourquoi j’ai rejoint Parlons Esport en tant que rédacteur, car je crois profondément en ce projet. Je rédige donc des interviews et des articles autour de l’actualité esport."
+    }
+  ],
+  "outlets": [
+    {
+      "id": "parlons-esport",
+      "name": "Parlons Esport",
+      "role": "Rédacteur",
+      "logo": "assets/logo-parlonsesport.jpg",
+      "description": "Média esport francophone. Interviews de joueurs, suivi de compétitions et actualités, principalement sur League of Legends, Valorant et CS2.",
+      "categories": [
+        {
+          "id": "interviews",
+          "label": "Interviews",
+          "color": "var(--crimson)",
+          "articles": [
+            {
+              "title": "Labrov au MSI : « Je suis confiant sur le fait qu’on puisse atteindre le top 4 », interview avec le support de G2 Esports",
+              "tag": "League of Legends",
+              "type": "lien",
+              "url": "https://parlonsesport.com/labrov-au-msi-je-suis-confiant-sur-le-fait-quon-puisse-atteindre-le-top-4-interview-avec-le-support-de-g2-esports/"
+            },
+            {
+              "title": "Ethan à l’EWC : « Qu’ils nous acclament ou nous huent, ça ne change rien »",
+              "tag": "Esports World Cup",
+              "type": "lien",
+              "url": "https://parlonsesport.com/ethan-a-lewc-quils-nous-acclament-ou-nous-huent-ca-ne-change-rien/"
+            },
+            {
+              "title": "Dambi à l’EWC : « Je vais essayer de devenir le prochain meilleur sur Neon au monde »",
+              "tag": "Valorant",
+              "type": "lien",
+              "url": "https://parlonsesport.com/dambi-a-lewc-je-vais-essayer-de-devenir-le-prochain-meilleur-sur-neon-au-monde/"
+            },
+            {
+              "title": "Bonkar à l’EWC : « Le Stage 2 et les Champions, c’est ça qui compte pour nous »",
+              "tag": "Valorant",
+              "type": "lien",
+              "url": "https://parlonsesport.com/bonkar-a-lewc-le-stage-2-et-les-champions-cest-ca-qui-compte-pour-nous/"
+            },
+            {
+              "title": "Team Liquid Kicks : « La fin de mon passage chez Vitality, c’était difficile », VCT EMEA",
+              "tag": "Valorant",
+              "type": "lien",
+              "url": "https://parlonsesport.com/team-liquid-kicks-la-fin-de-mon-passage-chez-vitality-c-etait-difficile-vctemea/"
+            },
+            {
+              "title": "EXIT : « Je pense que je suis l’un des meilleurs joueurs au monde », avec Waylay",
+              "tag": "Valorant",
+              "type": "lien",
+              "url": "https://parlonsesport.com/exit-je-pense-que-je-suis-lun-des-meilleurs-joueurs-au-monde-avec-waylay/"
+            },
+            {
+              "title": "Riens : « Lors du match contre KC, on n’avait aucune confiance »",
+              "tag": "League of Legends",
+              "type": "lien",
+              "url": "https://parlonsesport.com/riens-lors-du-match-contre-kc-on-navait-aucune-confiance/"
+            },
+            {
+              "title": "Caliste : « J’aimerais une nouvelle finale contre G2 à Nice et qu’on les batte cette fois », LEC",
+              "tag": "League of Legends",
+              "type": "lien",
+              "url": "https://parlonsesport.com/caliste-jaimerais-une-nouvelle-finale-contre-g2-a-nice-et-quon-les-batte-cette-fois-lec/"
+            },
+            {
+              "title": "S0pp : « On doit avoir plus de confiance si on veut se qualifier aux Champions »",
+              "tag": "Valorant",
+              "type": "lien",
+              "url": "https://parlonsesport.com/s0pp-on-doit-avoir-plus-de-confiance-si-on-veut-se-qualifier-aux-champions/"
+            },
+            {
+              "title": "Reapered : « On pouvait soit s’effondrer soit rebondir après le MSI »",
+              "tag": "League of Legends",
+              "type": "lien",
+              "url": "https://parlonsesport.com/reapered-on-pouvait-soit-seffondrer-soit-rebondir-apres-le-msi/"
+            },
+            {
+              "title": "Isma : « On était un peu bloqués dans le top 4-5, il fallait changer la dynamique »",
+              "tag": "League of Legends",
+              "type": "lien",
+              "url": "https://parlonsesport.com/isma-on-etait-un-peu-bloques-dans-le-top-4-5-il-fallait-changer-la-dynamique/"
+            },
+            {
+              "title": "kamyk : « Je ne peux pas imaginer une meilleure fanbase que celle de Joblife »",
+              "tag": "Valorant",
+              "type": "lien",
+              "url": "https://parlonsesport.com/kamyk-je-ne-peux-pas-imaginer-une-meilleure-fanbase-que-celle-de-joblife/"
+            }
+          ]
+        },
+        {
+          "id": "actualites",
+          "label": "Actualités",
+          "color": "var(--teal)",
+          "articles": [
+            {
+              "title": "Gentle Mates quitte CS2 : les raisons d’un départ inattendu",
+              "tag": "CS2",
+              "type": "lien",
+              "url": "https://parlonsesport.com/gentle-mates-quitte-cs2-les-raisons-dun-depart-inattendu/"
+            }
+          ]
+        },
+        {
+          "id": "competitions",
+          "label": "Compétitions",
+          "color": "var(--gold)",
+          "articles": [
+            {
+              "title": "Vitality tombe en quart de finale du Major de Cologne contre Falcons Esport",
+              "tag": "CS2",
+              "type": "lien",
+              "url": "https://parlonsesport.com/vitality-tombe-en-quart-de-finale-du-major-de-cologne-contre-falcons-esport/"
+            },
+            {
+              "title": "COD Champs 2026 : FaZe Vegas décroche le titre, Paris Gentle Mates au pied du podium et HyDra maudit",
+              "tag": "Call of Duty",
+              "type": "lien",
+              "url": "https://parlonsesport.com/champs-2026-faze-vegas-decroche-le-titre-paris-gentle-mates-au-pied-du-podium-et-hydra-maudit/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matepedia",
+      "name": "Matepedia",
+      "role": "Rédacteur",
+      "logo": "assets/logo-matepedia.jpg",
+      "description": "Site fan dédié à Gentle Mates, mes premières publications esport.",
+      "categories": [
+        {
+          "id": "articles",
+          "label": "Articles",
+          "color": "var(--gold)",
+          "articles": [
+            {
+              "title": "Major IV de Paris : le parcours de Gentle Mates",
+              "tag": "Call of Duty",
+              "type": "texte",
+              "content": "<p>Une entrée spectaculaire</p><p>Gentle Mates a signé l'une des entrées les plus marquantes sur la scène Call of Duty. Les joueurs sont apparus par surprise depuis le sol grâce à une plateforme élévatrice, sous une impressionnante démonstration pyrotechnique. Jets de flammes, effets visuels et ambiance électrique : tous les ingrédients étaient réunis pour lancer ce week-end de compétition. Retour sur le parcours de la structure française.</p><p>L’entrée des joueurs de Paris Gentle Mates au Major de Paris. Crédit : L’Equipe et CDL</p><p>Vendredi : un départ compliqué</p><p>Match 1 : Paris Gentle Mates 1-3 FaZe Vegas</p><p>Pour son entrée en lice, Gentle Mates s'incline 3-1 face à FaZe. Cette défaite les envoie immédiatement dans le lower bracket, où ils n'auront plus le droit à l'erreur. FaZe fait la différence l’Overload et l’Hardpoint sur Scar.</p><p>Match 2 : Paris Gentle Mates 3-0 Cloud9 New York</p><p>Quelques heures plus tard, les Français retrouvent déjà la scène face à Cloud9. Cette fois, il n'y a pas de suspense : Gentle Mates livre une prestation parfaitement maîtrisée. Tous les joueurs répondent présents et s'imposent 3-0 pour poursuivre leur aventure.</p><p>Samedi : la remontée portée par le public</p><p>La deuxième journée marque une montée en puissance de l'ambiance dans l'arène parisienne, avec des tribunes de plus en plus remplies.</p><p>Match 3 : Paris Gentle Mates 3-2 Miami Heretics</p><p>Les Espagnols de Miami Heretics, réputés très performants sur les modes à spawn, remportent le premier Hardpoint. Gentle Mates réagit immédiatement en égalisant sur la Search & Destroy de Fringe.</p><p>Heretics reprend ensuite l'avantage en remportant l'Overload et se retrouve à deux occasions de clôturer. Le quatrième Hardpoint devient alors décisif. Alors que les Français comptent près de 40 points de retard et que les Espagnols approchent des 250 points, une élimination semble inévitable.</p><p>C'est à ce moment que le public fait basculer la rencontre. Les chants résonnent dans toute l'arène, le momentum change de camp et Gentle Mates réalise une remontée exceptionnelle pour s'imposer 250 à 227.\nPortés par cette dynamique, les Français dominent ensuite totalement la dernière Search & Destroy sur Hacienda, remportée 6-0, sous les acclamations d'un public en fusion.</p><p>Le public explose de joie après une carte remportée face à Miami Heretics</p><p>Match 4 : Paris Gentle Mates 3-1 G2 Minnesota</p><p>Sur Colossus, une carte appréciée des deux équipes, Gentle Mates prend rapidement l'avantage en Hardpoint avant d'enchaîner avec une victoire en Search & Destroy. Même si l'équipe concède une nouvelle fois l'Overload, elle termine le travail grâce à une prestation convaincante en Hardpoint sur Den.</p><p>Cette victoire assure à Gentle Mates une place dans le top 4 et une qualification au Championship Sunday.</p><p>Dimanche : Gotaga et Brawks apportent le trophée</p><p>Gotaga et Brawks apportent le trophée pour le Championship Sunday. Crédit photo : Carm</p><p>Match 5 : Paris Gentle Mates 3-2 FaZe Vegas, la revanche</p><p>Les Français retrouvent FaZe. Le public français n'a pas oublié la première défaite ni les déclarations de Drazah après la rencontre. L'ambiance est particulièrement hostile envers les Américains.</p><p>FaZe remporte les deux Hardpoints tandis que Gentle Mates s'impose sur les deux Search & Destroy ainsi que sur l'Overload. Tout se joue donc lors d'une cinquième manche décisive.</p><p>Sur Fringe, la structure française livre une très belle prestation et remportent la carte 6-2, prenant ainsi une superbe revanche devant leur public.</p><p>Match 6 : Paris Gentle Mates 0-3 OpTic Texas</p><p>Après leur défaite contre Los Angeles Thieves, OpTic Texas retrouve immédiatement la scène pour affronter Gentle Mates.</p><p>Le premier Hardpoint sur Scar est extrêmement disputé et se joue à seulement trois points. Malgré une belle résistance, M8 ne parvient pas à renverser la tendance. OpTic, parfaitement remis de son précédent match, s'impose finalement 3-1. Malgré une longue interruption technique, les supporters n'ont jamais cessé de chanter pendant près de vingt minutes, offrant un spectacle rarement vu sur Call of Duty.</p><p>Gentle Mates termine donc troisième de ce Major de Paris. Un résultat très encourageant pour une équipe reconstruite seulement quelques semaines auparavant.</p><p>Clap de fin : OpTic confirme enfin une première place</p><p>OpTic Texas remportera finalement le Major IV. Les Américains s'imposent à Paris. Gotaga décerne à Dashy, le médaillon du MVP. Le Big 4 (OpTic, FaZe, 100T et M8) a chacun remporté un Major, ce qui laisse planer le suspens pour les Championships à Las Vegas. Tous les acteurs de l'événement retiendront surtout un public français exceptionnel, qui a impressionné les équipes nord-américaines et donné envie de revenir l'année prochaine.</p>"
+            },
+            {
+              "title": "Gentle Mates Weekly : le débrief de tout ce qu’il faut retenir (1–8 décembre)",
+              "tag": "Multigaming",
+              "type": "texte",
+              "content": "<p>Cette semaine, Gentle Mates joue sur plusieurs scènes, faisons un récapitulatif des résultats. Au programme, le début du Project Blender sur Valorant, Rocket League entame les playoffs à Copenhague, les qualifications au Major I de COD et enfin les performances de MarineLorD sur AOE.</p><p>VALORANT : Project Blender</p><p>Le Project Blender est un tournoi présaison organisé par Riot Games avec le soutien de la société française Gozulting. Gentle Mates y arrive à la phase 3. Les matchs sont en partie en BO1 dans une ronde suisse : un seul match décisif, contre une équipe au même nombre de victoires/défaites.</p><p>Match 1 : Gentle Mates vs Erah Esport</p><p>Pour leur entrée en lice, Gentle Mates affronte Erah Esport, équipe francophone promue ce split en Challengers France en remportant les Up and Down. Erah Esport avait le choix de l’adversaire et ils ont décidé Gentle Mates. Le match se déroule sur Pearl avec une composition double duellistes.</p><p>Résultat : VICTOIRE 13-1 : un match unilatéral. Tous nos joueurs terminent en positif avec un bipo particulièrement performant</p><p>Match 2 : Gentle Mates vs Galatasaray Esports</p><p>La deuxième rencontre oppose M8 à Galatasaray Esports, 4ème au Split 3 des Challengers 2025 en Turquie. Dans le Project Blender, ils ont vaincu des équipes comme FUT ou CGN. Le roster turc a montré un meilleur fire power que Gentle Mates.</p><p>Résultat : DEFAITE 10-13 sur Haven</p><p>L’inconvénient du BO1 est que cela ne laisse pas la place à l’erreur, c’est pourquoi la ronde suisse permet de combler ce manque. Gentle Mates se retrouve logiquement en 1-1 avant son troisième match.</p><p>Match 3 : Gentle Mates vs Ramboot Club</p><p>Ramboot Club joue en Challengers en Espagne. La rencontre se déroule sur Bind avec une composition double duelliste pour M8.</p><p>Résultat : VICTOIRE 13-6, notamment grâce à un side attaque remporté et une défense remarquable.</p><p>A partir du match 4, le format passe en BO3. De plus, le choix des agents devient très important, car les joueurs ne pourront choisir un agent déjà joué auparavant (règle fearless).</p><p>Match 4 : Gentle Mates vs Trashcan</p><p>Les cartes sélectionnées sont Split (choisie par M8), Sunset (par Trashcan) puis Haven en decider. Résultat : VICTOIRE nette 2-0. Gentle Mate s’impose 13-1 puis 13-2. Les joueurs ont montré des actions individuelles marquantes, dont le premier ace de Marteen à l’Outlaw ainsi que le quadruplé de Minny pour mettre un terme au match.</p><p>Match 5 : Gentle Mates vs Navi</p><p>Gentle Mates accède ainsi à la phase 4 du tournoi et affronte NAVI, une équipe du Tier 1 qui évolue aussi en VCT EMEA. Ce match se présente comme une excellente opportunité pour se mesurer. La première carte est Split choisie par Navi est à leur avantage (8-13). Gentle Mates répond sur son pick Pearl, largement dominée 13-5.</p><p>L’accès au top 8 du Project Blender se joue sur Haven. Après une belle remontée, Gentle Mates pousse la rencontre jusqu’en prolongations (12-12) . Toutefois, Navi parvient à faire la différence et conclut 14-12.</p><p>Résultat : DEFAITE 1-2, malgré une performance encourageante</p><p>L’aventure du Project Blender s’achève ici pour Gentle Mates. Le roster M8 sera de retour fin janvier pour le Kickoff, où il affrontera l’équipe turque FUT</p><p>ROCKET LEAGUE : Une conclusion amère</p><p>Passons maintenant à Rocket League.</p><p>Gentle Mates dispute un match crucial offrant une place dans le top 4 européen et une qualification à la Kickoff LAN. Le vainqueur du Kickoff LAN permet à sa région d’obtenir un cinquième slot au Worlds en Amérique du Nord. La rencontre face à Vitality se termine sur une DÉFAITE 3-4, une élimination frustrante pour un TOP 6 européen. Le BO est extrêmement serré : cinq des septs matchs se concluent en overtime avec des buts inscrivent dans les dernières secondes. Gentle Mates montre toutefois de belles choses, notamment des actions individuelles hors-du-commun d’Oski, ou une stratégie au kick-off aboutissant à un but. À noter : Zen dépasse les 1209 points lors de la deuxième game.</p><p>En s’imposant dans le tournoi, la Karmine Corp décroche pour l’Europe un cinquième slot au championnat du monde.</p><p>CALL OF DUTY : Reprise de la CDL</p><p>Le premier match de la CDL est face à Vancouver Surge où fait partie Lunarz (anciennement chez LAG M8) et Lqgend (un joueur français champion du monde sur Halo, qui a fait la transition sur BO7).</p><p>Résultat : VICTOIRE 3-0. Hardpoint sur Colossus, Recherche et Destruction sur Raid, puis Overload sur Den.</p><p>Le second match est face à une équipe très compétitive : Faze Vegas. Le roster Vegas est composé d’un des rare francophone de la CDL, le belge Abuzah.</p><p>Résultat : DEFAITE 2-3. Gentle Mates a dominé sur les deux Hardpoints, tandis que Faze s’impose en Recherche et Destruction (sur Scar puis Den en map 5) et en Overload sur Exposure. On retiendra un 1v4 décisif de Ghosty pour conclure le premier HP.</p><p>Gentle Mates termine en 1-1 avant le dernier match de l’année 2025 sera contre Los Angeles Thieves, la semaine prochaine.</p><p>AGE OF EMPIRE 4 : La remontada de MarineLorD</p><p>Après une défaite l’envoyant dans le lower bracket du l’EGC Masters Finals 2025. Le GOAT a réalisé une véritable remontée en enchainant trois victoires consécutives pour atteindre en lower bracket final.</p><p>En effet, son premier match dans cette partie du tableau est en BO5 face à loueMT. Résultat : VICTOIRE 3-0, un retour solide.</p><p>Le format évolue ensuite en BO7 pour le biélorusse Anotand. Résultat : VICTOIRE, une série plus disputée mais remportée 4-3 .</p><p>Enfin, le dernier affrontement de la semaine est avec Beasty. Il représente un grand adversaire pour MarineLorD car leur duel se retrouve souvent en finale tandis qu’ici il s’agit une élimination pour atteindre le top 3. Résultat : VICTOIRE 4-2</p><p>Enfin, MarineLorD termine sa semaine par un duel très attendu contre Beasty. Les deux joueurs se retrouvent régulièrement en finale, mais cette fois l’enjeu était une place dans le top 3. Résultat : VICTOIRE 4-2, un succès important qui confirme la forme du Français. Le prochain match est prévu le samedi 13 décembre.</p><p>~Loukas</p>"
+            }
+          ]
+        },
+        {
+          "id": "videos",
+          "label": "Vidéos",
+          "color": "var(--teal)",
+          "articles": [
+            {
+              "title": "Interview vidéo — Matepedia",
+              "tag": "Vidéo",
+              "type": "video",
+              "url": "https://x.com/M8_Loukas/status/2077007730921926962"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
