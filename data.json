@@ -47,7 +47,7 @@
     {
       "id": "parlons-esport",
       "name": "Parlons Esport",
-      "role": "Rédacteur",
+      "role": "Journaliste",
       "logo": "assets/uploads/1795168526754-parlonsesport-logo.jpg",
       "description": "Média esport francophone. Interviews de joueurs, suivi de compétitions et actualités, principalement sur League of Legends, Valorant et CS2.",
       "categories": [
@@ -56,6 +56,24 @@
           "label": "Interviews",
           "color": "teal",
           "articles": [
+            {
+              "title": "BrokenBlade : « Il y avait beaucoup de fans G2 Esports au LEC Roadtrip de Paris »",
+              "date": "2026-08-02",
+              "game": "League of Legends",
+              "event": "LEC",
+              "type": "lien",
+              "url": "https://parlonsesport.com/brokenblade-il-y-avait-beaucoup-de-fans-g2-esports-au-lec-roadtrip-de-paris/",
+              "image": ""
+            },
+            {
+              "title": "kamyk : « Je ne peux pas imaginer une meilleure fanbase que celle de Joblife »",
+              "date": "2026-08-08",
+              "game": "Valorant",
+              "event": "VCT",
+              "type": "lien",
+              "url": "https://parlonsesport.com/kamyk-je-ne-peux-pas-imaginer-une-meilleure-fanbase-que-celle-de-joblife/",
+              "image": ""
+            },
             {
               "title": "RZA à l’EVO France 2026 : « J’aimerais bien aller challenger Vitality et BMS »",
               "date": "2026-11-2",
@@ -147,7 +165,7 @@
               "image": ""
             },
             {
-              "title": "S0pp : « On doit avoir plus de confiance si on veut se qualifier aux Champions »",
+              "title": "s0pp : « On doit avoir plus de confiance si on veut se qualifier aux Champions »",
               "type": "lien",
               "url": "https://parlonsesport.com/s0pp-on-doit-avoir-plus-de-confiance-si-on-veut-se-qualifier-aux-champions/",
               "date": "2026-08-02",
@@ -181,6 +199,42 @@
           "color": "sun",
           "articles": [
             {
+              "title": "https://parlonsesport.com/hydra-et-scrap-chez-faze-le-premier-domino-du-mercato-est-tombe/",
+              "date": "2026-09-15",
+              "game": "Call of Duty",
+              "event": "CDL",
+              "type": "lien",
+              "url": "https://parlonsesport.com/hydra-et-scrap-chez-faze-le-premier-domino-du-mercato-est-tombe/",
+              "image": ""
+            },
+            {
+              "title": "04, Drazah et Abuzah, le seul Belge de la CDL, rejoindraient Paris Gentle Mates : le roster enfin complet ?",
+              "date": "2026-09-19",
+              "game": "Call of Duty",
+              "event": "CDL ",
+              "type": "lien",
+              "url": "https://parlonsesport.com/04-drazah-et-abuzah-le-seul-belge-de-la-cdl-rejoindraient-paris-gentle-mates-le-roster-enfin-complet/",
+              "image": ""
+            },
+            {
+              "title": "Les deux maîtres mots de la CDL en 2027 : plus de tournoi et une ouverture aux Challengers",
+              "date": "2026-10-15",
+              "game": "Call of Duty",
+              "event": "CDL",
+              "type": "lien",
+              "url": "https://parlonsesport.com/les-deux-maitres-mots-de-la-cdl-en-2027-plus-de-tournoi-et-une-ouverture-aux-challengers/",
+              "image": ""
+            },
+            {
+              "title": "VCT Partenaires 2027/2028 : carton plein pour Gentle Mates, Karmine Corp et Team Vitality",
+              "date": "2026-10-22",
+              "game": "Valorant",
+              "event": "VCT",
+              "type": "lien",
+              "url": "https://parlonsesport.com/vct-partenaires-2027-2028-carton-plein-pour-gentle-mates-karmine-corp-et-team-vitality/",
+              "image": ""
+            },
+            {
               "title": "Gentle Mates quitte CS2 : les raisons d’un départ inattendu",
               "type": "lien",
               "url": "https://parlonsesport.com/gentle-mates-quitte-cs2-les-raisons-dun-depart-inattendu/",
@@ -196,6 +250,33 @@
           "label": "Compétitions",
           "color": "rose",
           "articles": [
+            {
+              "title": "Fortnite Global Championship 2026 : SwizzY signe le back-to-back, Gentle Mates déchu du titre, HavoK by Vitality au sommet",
+              "date": "2026-09-27",
+              "game": "Fortnite",
+              "event": "Fortnite Global Championship ",
+              "type": "lien",
+              "url": "https://parlonsesport.com/fortnite-global-championship-2026-swizzy-signe-le-back-to-back-gentle-mates-dechu-du-titre-havok-by-vitality-au-sommet/",
+              "image": ""
+            },
+            {
+              "title": "VALORANT Champions 2026 : LOUD champion, Vitality deuxième et Karmine Corp trop juste",
+              "date": "2026-10-18",
+              "game": "Valorant",
+              "event": "Champions",
+              "type": "lien",
+              "url": "https://parlonsesport.com/valorant-champions-2026-loud-champion-vitality-deuxieme-et-karmine-corp-trop-juste/",
+              "image": ""
+            },
+            {
+              "title": "VALORANT GCC 2026 : KRÜ sacrée, Gentle Mates vice-championne du monde",
+              "date": "2026-11-03",
+              "game": "Valorant",
+              "event": "Game Changers ",
+              "type": "lien",
+              "url": "https://parlonsesport.com/valorant-gcc-2026-gentle-mates-vice-championne-du-monde-kru-sacree/",
+              "image": ""
+            },
             {
               "title": "Vitality tombe en quart de finale du Major de Cologne contre Falcons Esport",
               "type": "lien",
