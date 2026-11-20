@@ -9,16 +9,16 @@
   "author": {
     "name": "Ethan Roussel",
     "aliases": "alias Loukas / Louston",
-    "bio": "Rédacteur esport. J'écris des interviews, des actualités et des comptes-rendus de compétitions, principalement autour de League of Legends, Valorant et CS2.",
+    "bio": "Journaliste esport. Je fais des interviews et j'écris des articles autour  de l'actualité et des comptes-rendus de compétitions, principalement autour de Valorant, Call of Duty, League of Legends, ...",
     "photo": "assets/uploads/1795168516529-90f18861-ed2d-40d7-b4d8-bc151a.jpg",
-    "tagline": "Rédacteur esport. Interviews, actus et compétitions."
+    "tagline": "Journaliste et rédateur esport. Interviews, actus et compétitions."
   },
   "contact": {
     "email": "ethanroussel08@gmail.com",
     "instagram": "https://www.instagram.com/ethan_rsl8/",
     "x": "https://x.com/M8_Loukas",
     "linkedin": "https://www.linkedin.com/in/ethan-roussel-162911334/",
-    "intro": "Le meilleur moyen de me contacter, pour une interview, une collaboration ou simplement échanger sur l'esport.",
+    "intro": "Le meilleur moyen de me contacter, pour une interview, une collaboration ou simplement échanger sur l'esport et le journalisme.",
     "image": ""
   },
   "about": [
@@ -39,7 +39,12 @@
     },
     {
       "title": "Parlons Esport",
-      "text": "En raison d’une maintenance, j’ai décidé de me tourner vers des médias plus professionnalisants, qui me permettaient de découvrir de nouvelles perspectives. C’est pourquoi j’ai rejoint Parlons Esport en tant que rédacteur, car je crois profondément en ce projet. Je rédige donc des interviews et des articles autour de l’actualité esport.",
+      "text": "En raison d’une maintenance, j’ai décidé de me tourner vers des médias plus professionnalisants, qui me permettaient de découvrir de nouvelles perspectives. C’est pourquoi j’ai rejoint Parlons Esport en tant que journaiste, car je crois profondément en ce projet. Je rédige donc des interviews et des articles autour de l’actualité esport. Je mène aussi mes propres interviews",
+      "image": ""
+    },
+    {
+      "title": "Parlons Esport COD",
+      "text": "Le Major IV à Paris m'a donné envie de mettre davantage l'accent sur la scène Call of Duty. C'est pourquoi j'ai été à l'initiative de la création du pôle Call of Duty chez Parlons Esport. La gestion et les publications du compte X me sont confiés. J'ai pu apprendre la communication et à me servir de Figma. ",
       "image": ""
     }
   ],
