@@ -10,7 +10,7 @@
     "name": "Ethan Roussel",
     "aliases": "alias Loukas / Louston",
     "bio": "Rédacteur esport. J'écris des interviews, des actualités et des comptes-rendus de compétitions, principalement autour de League of Legends, Valorant et CS2.",
-    "photo": "assets/photo-profil.jpg",
+    "photo": "assets/uploads/1795168516529-90f18861-ed2d-40d7-b4d8-bc151a.jpg",
     "tagline": "Rédacteur esport. Interviews, actus et compétitions."
   },
   "contact": {
@@ -48,7 +48,7 @@
       "id": "parlons-esport",
       "name": "Parlons Esport",
       "role": "Rédacteur",
-      "logo": "assets/logo-parlonsesport.jpg",
+      "logo": "assets/uploads/1795168526754-parlonsesport-logo.jpg",
       "description": "Média esport francophone. Interviews de joueurs, suivi de compétitions et actualités, principalement sur League of Legends, Valorant et CS2.",
       "categories": [
         {
@@ -56,6 +56,24 @@
           "label": "Interviews",
           "color": "teal",
           "articles": [
+            {
+              "title": "RZA à l’EVO France 2026 : « J’aimerais bien aller challenger Vitality et BMS »",
+              "date": "2026-11-20",
+              "game": "",
+              "event": "EVO FRANCE ",
+              "type": "lien",
+              "url": "https://parlonsesport.com/rza-a-levo-france-2026-jaimerais-bien-aller-challenger-vitality-et-bms/",
+              "image": "assets/uploads/1795168920085-credit-photo-carmpictures.jpg"
+            },
+            {
+              "title": "Nouvel article",
+              "date": "2026-11-20",
+              "game": "",
+              "event": "",
+              "type": "lien",
+              "url": "",
+              "image": ""
+            },
             {
               "title": "Labrov au MSI : « Je suis confiant sur le fait qu’on puisse atteindre le top 4 », interview avec le support de G2 Esports",
               "type": "lien",
@@ -93,7 +111,7 @@
               "image": ""
             },
             {
-              "title": "Team Liquid Kicks : « La fin de mon passage chez Vitality, c’était difficile », VCT EMEA",
+              "title": " Kicks : « La fin de mon passage chez Vitality, c’était difficile », VCT EMEA",
               "type": "lien",
               "url": "https://parlonsesport.com/team-liquid-kicks-la-fin-de-mon-passage-chez-vitality-c-etait-difficile-vctemea/",
               "date": "2026-07-27",
@@ -102,7 +120,7 @@
               "image": ""
             },
             {
-              "title": "EXIT : « Je pense que je suis l’un des meilleurs joueurs au monde », avec Waylay",
+              "title": "ExiT : « Je pense que je suis l’un des meilleurs joueurs au monde », avec Waylay",
               "type": "lien",
               "url": "https://parlonsesport.com/exit-je-pense-que-je-suis-lun-des-meilleurs-joueurs-au-monde-avec-waylay/",
               "date": "2026-07-28",
@@ -111,7 +129,7 @@
               "image": ""
             },
             {
-              "title": "Riens : « Lors du match contre KC, on n’avait aucune confiance »",
+              "title": "RieNs : « Lors du match contre KC, on n’avait aucune confiance »",
               "type": "lien",
               "url": "https://parlonsesport.com/riens-lors-du-match-contre-kc-on-navait-aucune-confiance/",
               "date": "2026-08-02",
@@ -153,15 +171,6 @@
               "date": "2026-08-05",
               "game": "League of Legends",
               "event": "LEC",
-              "image": ""
-            },
-            {
-              "title": "kamyk : « Je ne peux pas imaginer une meilleure fanbase que celle de Joblife »",
-              "type": "lien",
-              "url": "https://parlonsesport.com/kamyk-je-ne-peux-pas-imaginer-une-meilleure-fanbase-que-celle-de-joblife/",
-              "date": "2026-08-08",
-              "game": "Valorant",
-              "event": "VCT EMEA",
               "image": ""
             }
           ]
@@ -215,7 +224,7 @@
       "id": "matepedia",
       "name": "Matepedia",
       "role": "Rédacteur",
-      "logo": "assets/logo-matepedia.jpg",
+      "logo": "assets/uploads/1795168573864-logom8pedia.jpg",
       "description": "Site fan dédié à Gentle Mates, mes premières publications esport.",
       "categories": [
         {
