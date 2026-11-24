@@ -11,7 +11,8 @@
     "aliases": "alias Loukas / Louston",
     "bio": "Journaliste esport. Je fais des interviews et j'écris des articles autour de l'actualité et des comptes-rendus de compétitions, principalement autour de Valorant, Call of Duty, League of Legends, ...",
     "photo": "assets/uploads/1795168516529-90f18861-ed2d-40d7-b4d8-bc151a.jpg",
-    "tagline": "Journaliste et rédacteur esport. Interviews, actus et compétitions."
+    "tagline": "Journaliste et rédacteur esport. Interviews, actus et compétitions.",
+    "photoCredit": "Judith Astier"
   },
   "contact": {
     "email": "ethanroussel08@gmail.com",
@@ -79,8 +80,9 @@
               "event": "LEC",
               "type": "lien",
               "url": "https://parlonsesport.com/brokenblade-il-y-avait-beaucoup-de-fans-g2-esports-au-lec-roadtrip-de-paris/",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795524218913-brokenblade-sasn-credit.jpg",
+              "mode": "",
+              "imageCredit": "Charles Michalet / Riot Games"
             },
             {
               "title": "kamyk : « Je ne peux pas imaginer une meilleure fanbase que celle de Joblife »",
@@ -89,8 +91,9 @@
               "event": "VCT",
               "type": "lien",
               "url": "https://parlonsesport.com/kamyk-je-ne-peux-pas-imaginer-une-meilleure-fanbase-que-celle-de-joblife/",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795524467762-kamyk.jpg",
+              "mode": "",
+              "imageCredit": "Michal Konkol / Riot Games"
             },
             {
               "title": "RZA à l’EVO France 2026 : « J’aimerais bien aller challenger Vitality et BMS »",
@@ -110,8 +113,10 @@
               "event": "Guill Games",
               "type": "lien",
               "url": "https://parlonsesport.com/theguill84-a-la-lyon-esport-les-guill-games-cest-le-premier-vrai-tournoi-esport-minecraft-en-france/",
-              "image": "",
-              "mode": "interview"
+              "image": "assets/uploads/1795524499072-minia-article-guill.jpg",
+              "mode": "interview",
+              "fav": true,
+              "imageCredit": "Leny Munier"
             },
             {
               "title": "Labrov au MSI : « Je suis confiant sur le fait qu’on puisse atteindre le top 4 », interview avec le support de G2 Esports",
@@ -120,8 +125,9 @@
               "date": "2026-07-08",
               "game": "League of Legends",
               "event": "MSI",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795524519711-labrov-support-lol-lec-g2-espo.jpg",
+              "mode": "",
+              "imageCredit": "Colin Young-Wolff / Riot Games"
             },
             {
               "title": "Ethan à l’EWC : « Qu’ils nous acclament ou nous huent, ça ne change rien »",
@@ -130,8 +136,9 @@
               "date": "2026-07-11",
               "game": "Valorant",
               "event": "EWC",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795524671614-ethan-player-nrg-valorant-mast.jpg",
+              "mode": "",
+              "imageCredit": "Colin Young-Wolff / Riot Games"
             },
             {
               "title": "Dambi à l’EWC : « Je vais essayer de devenir le prochain meilleur sur Neon au monde »",
@@ -140,8 +147,9 @@
               "date": "2026-07-12",
               "game": "Valorant",
               "event": "EWC",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795524718220-dambi-valorant-player-nongshim.jpg",
+              "mode": "",
+              "imageCredit": "Colin Young-Wolff / Riot Games"
             },
             {
               "title": "Bonkar à l’EWC : « Le Stage 2 et les Champions, c’est ça qui compte pour nous »",
@@ -150,8 +158,9 @@
               "date": "2026-07-12",
               "game": "Valorant",
               "event": "EWC",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795524735101-bonkar-coach-nrg-valorant-ewc-.jpg",
+              "mode": "",
+              "imageCredit": "Colin Young-Wolff / Riot Games"
             },
             {
               "title": "Kicks : « La fin de mon passage chez Vitality, c’était difficile », VCT EMEA",
@@ -160,8 +169,9 @@
               "date": "2026-07-27",
               "game": "Valorant",
               "event": "VCT EMEA",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795524781281-kicks-cre-dit-michal.jpg",
+              "mode": "",
+              "imageCredit": "Michal Konkol / Riot Games"
             },
             {
               "title": "ExiT : « Je pense que je suis l’un des meilleurs joueurs au monde », avec Waylay",
@@ -170,8 +180,9 @@
               "date": "2026-07-28",
               "game": "Valorant",
               "event": "VCT EMEA",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795524804241-exit-navi-valorant-vct-emea-st.jpg",
+              "mode": "",
+              "imageCredit": "Michal Konkol / Riot Games"
             },
             {
               "title": "RieNs : « Lors du match contre KC, on n’avait aucune confiance »",
@@ -180,8 +191,9 @@
               "date": "2026-08-02",
               "game": "Valorant",
               "event": "VCT EMEA",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795524908426-riens-sans-cre-dit.jpg",
+              "mode": "",
+              "imageCredit": "Alexandre Weber / Riot Games"
             },
             {
               "title": "Caliste : « J’aimerais une nouvelle finale contre G2 à Nice et qu’on les batte cette fois », LEC",
@@ -190,8 +202,9 @@
               "date": "2026-08-02",
               "game": "League of Legends",
               "event": "LEC",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795524919865-caliste-sans-credit.jpg",
+              "mode": "",
+              "imageCredit": "Michal Konkol / Riot Games"
             },
             {
               "title": "s0pp : « On doit avoir plus de confiance si on veut se qualifier aux Champions »",
@@ -200,8 +213,9 @@
               "date": "2026-08-02",
               "game": "Valorant",
               "event": "VCT EMEA",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795524986232-s0pp-fut-esports-valorant-vct-.jpg",
+              "mode": "",
+              "imageCredit": "Alexandre Weber / Riot Games"
             },
             {
               "title": "Reapered : « On pouvait soit s’effondrer soit rebondir après le MSI »",
@@ -210,8 +224,9 @@
               "date": "2026-08-03",
               "game": "League of Legends",
               "event": "LEC",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795525037001-repeared-michal.jpg",
+              "mode": "",
+              "imageCredit": "Michal Konkol / Riot Games"
             },
             {
               "title": "Isma : « On était un peu bloqués dans le top 4-5, il fallait changer la dynamique »",
@@ -220,8 +235,9 @@
               "date": "2026-08-05",
               "game": "League of Legends",
               "event": "LEC",
-              "image": "",
-              "mode": ""
+              "image": "assets/uploads/1795525070186-isma-jungler-giantx-lec-summer.jpg",
+              "mode": "",
+              "imageCredit": "Michal Konkol / Riot Games"
             }
           ]
         },
@@ -237,7 +253,8 @@
               "event": "CDL",
               "type": "lien",
               "url": "https://parlonsesport.com/hydra-et-scrap-chez-faze-le-premier-domino-du-mercato-est-tombe/",
-              "image": ""
+              "image": "assets/uploads/1795525365829-codleague-hydra-scrap.jpg",
+              "imageCredit": "COD League"
             },
             {
               "title": "04, Drazah et Abuzah, le seul Belge de la CDL, rejoindraient Paris Gentle Mates : le roster enfin complet ?",
@@ -246,7 +263,8 @@
               "event": "CDL ",
               "type": "lien",
               "url": "https://parlonsesport.com/04-drazah-et-abuzah-le-seul-belge-de-la-cdl-rejoindraient-paris-gentle-mates-le-roster-enfin-complet/",
-              "image": ""
+              "image": "assets/uploads/1795525371544-codleague.jpg",
+              "imageCredit": "COD League"
             },
             {
               "title": "Les deux maîtres mots de la CDL en 2027 : plus de tournoi et une ouverture aux Challengers",
@@ -255,7 +273,8 @@
               "event": "CDL",
               "type": "lien",
               "url": "https://parlonsesport.com/les-deux-maitres-mots-de-la-cdl-en-2027-plus-de-tournoi-et-une-ouverture-aux-challengers/",
-              "image": ""
+              "image": "assets/uploads/1795525386811-credit-photo-carmpictures-1.jpg",
+              "imageCredit": "Carmpictures"
             },
             {
               "title": "VCT Partenaires 2027/2028 : carton plein pour Gentle Mates, Karmine Corp et Team Vitality",
@@ -264,7 +283,8 @@
               "event": "VCT",
               "type": "lien",
               "url": "https://parlonsesport.com/vct-partenaires-2027-2028-carton-plein-pour-gentle-mates-karmine-corp-et-team-vitality/",
-              "image": ""
+              "image": "assets/uploads/1795525398304-photo-champions-2026.jpg",
+              "imageCredit": "Lee Aiksoon / Riot Games"
             },
             {
               "title": "Gentle Mates quitte CS2 : les raisons d’un départ inattendu",
@@ -289,7 +309,8 @@
               "event": "Fortnite Global Championship ",
               "type": "lien",
               "url": "https://parlonsesport.com/fortnite-global-championship-2026-swizzy-signe-le-back-to-back-gentle-mates-dechu-du-titre-havok-by-vitality-au-sommet/",
-              "image": ""
+              "image": "assets/uploads/1795525488343-swizzy-pixxie-havok-vitality-w.jpg",
+              "imageCredit": "FNCompetitive"
             },
             {
               "title": "VALORANT Champions 2026 : LOUD champion, Vitality deuxième et Karmine Corp trop juste",
@@ -298,7 +319,8 @@
               "event": "Champions",
               "type": "lien",
               "url": "https://parlonsesport.com/valorant-champions-2026-loud-champion-vitality-deuxieme-et-karmine-corp-trop-juste/",
-              "image": ""
+              "image": "assets/uploads/1795525533745-loud-champions-du-monde-vct-ch.jpg",
+              "imageCredit": "Colin Young-Wolff / Riot Games"
             },
             {
               "title": "VALORANT GCC 2026 : KRÜ sacrée, Gentle Mates vice-championne du monde",
@@ -307,7 +329,8 @@
               "event": "Game Changers ",
               "type": "lien",
               "url": "https://parlonsesport.com/valorant-gcc-2026-gentle-mates-vice-championne-du-monde-kru-sacree/",
-              "image": ""
+              "image": "assets/uploads/1795525585884-kru-remporte-les-gcc-2026-sur-.jpg",
+              "imageCredit": "Bruno Alvares / Riot Games"
             },
             {
               "title": "Vitality tombe en quart de finale du Major de Cologne contre Falcons Esport",
@@ -325,7 +348,8 @@
               "date": "2026-07-20",
               "game": "Call of Duty",
               "event": "CDL Champs",
-              "image": ""
+              "image": "assets/uploads/1795525625891-fuck-faze-mais-bv-abuzah-cropp.jpg",
+              "imageCredit": "COD League"
             }
           ]
         }
@@ -371,14 +395,15 @@
           "color": "teal",
           "articles": [
             {
-              "title": "Interview vidéo — Matepedia",
+              "title": "Interview vidéo d'HyDra — Matepedia",
               "type": "video",
               "url": "https://x.com/M8_Loukas/status/2077007730921926962",
-              "date": "",
-              "game": "",
-              "event": "",
-              "image": "",
-              "mode": "interview"
+              "date": "2026-06-27",
+              "game": "Call of Duty",
+              "event": "Major IV Paris",
+              "image": "assets/uploads/1795525672734-img-8141.jpg",
+              "mode": "interview",
+              "imageCredit": "Ethan Roussel"
             }
           ]
         }
