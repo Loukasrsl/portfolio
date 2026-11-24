@@ -352,7 +352,7 @@ const byDate = dir => (p,q)=>{ const d=nd(p.a.date), e=nd(q.a.date); if(!d&&!e) 
 const norm = s => String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[’‘]/g,"'").toLowerCase();
 function getPath(o,p){ return p.split(".").reduce((c,k)=>c==null?"":c[k],o) || ""; }
 const isInt = a => a.type==="texte"||a.type==="videofile";
-const modeBadge = a => a.mode==="interview" ? `<span class="badge-iv">Interview menée par moi</span>` : a.mode==="transcription" ? `<span class="mode-note">Rédigé d'après une transcription</span>` : "";
+const modeBadge = a => a.mode==="interview" ? `<span class="badge-iv">Interview menée par moi</span>`;
 const credLine = c => c ? `Crédit photo : ${esc(c)}` : "";
 function fig(src, credit, alt, cls){ return `<figure class="fig ${cls||""}"><img src="${esc(imgSrc(src))}" alt="${esc(alt||"")}" loading="lazy">${credit?`<figcaption class="credit">${credLine(credit)}</figcaption>`:""}</figure>`; }
 function fmtDate(d){ d = nd(d); if(!d) return ""; const x = new Date(d+"T12:00:00"); return isNaN(x) ? "" : x.toLocaleDateString("fr-FR",{day:"numeric",month:"long",year:"numeric"}); }
