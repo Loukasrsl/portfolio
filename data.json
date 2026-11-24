@@ -36,17 +36,20 @@
     {
       "title": "Matepedia",
       "text": "Lier une vocation de journaliste et l’économie, cela fait sens, mais avec une passion comme l’esport, ce serait encore mieux. Je suis l’esport sur différents jeux depuis maintenant quelques années et, en suivant Gentle Mates, il était naturel de penser que le journalisme esport était envisageable. J’ai vu le projet de Matepedia, dont la version bêta m’a permis de commencer à écrire autour du club. Ce média communautaire m’a notamment donné l’opportunité de couvrir le plus grand Major de la Call of Duty League à Paris La Défense Arena.",
-      "image": ""
+      "image": "assets/uploads/1795526628666-img-8043-cropped.jpg",
+      "imageCredit": "Ethan Roussel"
     },
     {
       "title": "Parlons Esport",
       "text": "En raison d’une maintenance, j’ai décidé de me tourner vers des médias plus professionnalisants, qui me permettaient de découvrir de nouvelles perspectives. C’est pourquoi j’ai rejoint Parlons Esport en tant que journaliste, car je crois profondément en ce projet. Je rédige donc des interviews et des articles autour de l’actualité esport. Je mène aussi mes propres interviews.",
-      "image": ""
+      "image": "assets/uploads/1795526547551-annoncepe.jpg",
+      "imageCredit": "Judith Astier"
     },
     {
       "title": "Parlons Esport COD",
       "text": "Le Major IV à Paris m'a donné envie de mettre davantage l'accent sur la scène Call of Duty. C'est pourquoi j'ai été à l'initiative de la création du pôle Call of Duty chez Parlons Esport. La gestion et les publications du compte X me sont confiés. J'ai pu apprendre la communication et à me servir de Figma. ",
-      "image": ""
+      "image": "assets/uploads/1795526805953-parlons-cod-banniere.jpg",
+      "imageCredit": "Parlons COD"
     }
   ],
   "outlets": [
@@ -71,7 +74,8 @@
               "url": "https://parlonsesport.com/wipr-a-la-lyon-esport-le-mercato-valorant-est-exceptionnel-en-cette-off-season/",
               "image": "assets/uploads/1795514295161-minia-article-wir.jpg",
               "mode": "interview",
-              "imageCredit": "Xander"
+              "imageCredit": "Xander",
+              "fav": true
             },
             {
               "title": "BrokenBlade : « Il y avait beaucoup de fans G2 Esports au LEC Roadtrip de Paris »",
@@ -349,7 +353,8 @@
               "game": "Call of Duty",
               "event": "CDL Champs",
               "image": "assets/uploads/1795525625891-fuck-faze-mais-bv-abuzah-cropp.jpg",
-              "imageCredit": "COD League"
+              "imageCredit": "COD League",
+              "fav": true
             }
           ]
         }
@@ -403,7 +408,8 @@
               "event": "Major IV Paris",
               "image": "assets/uploads/1795525672734-img-8141.jpg",
               "mode": "interview",
-              "imageCredit": "Ethan Roussel"
+              "imageCredit": "Ethan Roussel",
+              "fav": true
             }
           ]
         }
@@ -415,5 +421,5 @@
   "theme": {
     "accent": "yellow"
   },
-  "aboutIntro": "De la télé locale aux salles d'esport, voici le chemin parcouru jusqu'ici."
+  "aboutIntro": "De la télé locale au plus grand événement Call of Duty, voici mon chemin parcouru jusqu'ici."
 }
