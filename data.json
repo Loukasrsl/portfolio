@@ -79,7 +79,6 @@
               "type": "lien",
               "url": "https://parlonsesport.com/brokenblade-il-y-avait-beaucoup-de-fans-g2-esports-au-lec-roadtrip-de-paris/",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "kamyk : « Je ne peux pas imaginer une meilleure fanbase que celle de Joblife »",
@@ -89,7 +88,6 @@
               "type": "lien",
               "url": "https://parlonsesport.com/kamyk-je-ne-peux-pas-imaginer-une-meilleure-fanbase-que-celle-de-joblife/",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "RZA à l’EVO France 2026 : « J’aimerais bien aller challenger Vitality et BMS »",
@@ -99,7 +97,6 @@
               "type": "lien",
               "url": "https://parlonsesport.com/rza-a-levo-france-2026-jaimerais-bien-aller-challenger-vitality-et-bms/",
               "image": "assets/uploads/1795168920085-credit-photo-carmpictures.jpg",
-              "mode": "transcription",
               "imageCredit": "Carmpictures"
             },
             {
@@ -120,7 +117,6 @@
               "game": "League of Legends",
               "event": "MSI",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "Ethan à l’EWC : « Qu’ils nous acclament ou nous huent, ça ne change rien »",
@@ -130,7 +126,6 @@
               "game": "Valorant",
               "event": "EWC",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "Dambi à l’EWC : « Je vais essayer de devenir le prochain meilleur sur Neon au monde »",
@@ -140,7 +135,6 @@
               "game": "Valorant",
               "event": "EWC",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "Bonkar à l’EWC : « Le Stage 2 et les Champions, c’est ça qui compte pour nous »",
@@ -150,7 +144,6 @@
               "game": "Valorant",
               "event": "EWC",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "Kicks : « La fin de mon passage chez Vitality, c’était difficile », VCT EMEA",
@@ -160,7 +153,6 @@
               "game": "Valorant",
               "event": "VCT EMEA",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "ExiT : « Je pense que je suis l’un des meilleurs joueurs au monde », avec Waylay",
@@ -170,7 +162,6 @@
               "game": "Valorant",
               "event": "VCT EMEA",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "RieNs : « Lors du match contre KC, on n’avait aucune confiance »",
@@ -180,7 +171,6 @@
               "game": "Valorant",
               "event": "VCT EMEA",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "Caliste : « J’aimerais une nouvelle finale contre G2 à Nice et qu’on les batte cette fois », LEC",
@@ -190,7 +180,6 @@
               "game": "League of Legends",
               "event": "LEC",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "s0pp : « On doit avoir plus de confiance si on veut se qualifier aux Champions »",
@@ -200,7 +189,6 @@
               "game": "Valorant",
               "event": "VCT EMEA",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "Reapered : « On pouvait soit s’effondrer soit rebondir après le MSI »",
@@ -210,7 +198,6 @@
               "game": "League of Legends",
               "event": "LEC",
               "image": "",
-              "mode": "transcription"
             },
             {
               "title": "Isma : « On était un peu bloqués dans le top 4-5, il fallait changer la dynamique »",
@@ -220,7 +207,6 @@
               "game": "League of Legends",
               "event": "LEC",
               "image": "",
-              "mode": "transcription"
             }
           ]
         },
