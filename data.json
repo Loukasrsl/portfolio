@@ -62,6 +62,15 @@
           "color": "teal",
           "articles": [
             {
+              "title": "WiPR à la Lyon Esport : « Le mercato [VALORANT] est exceptionnel en cette off-season »",
+              "date": "2026-11-22",
+              "game": "Valorant",
+              "event": "LYON ESPORT",
+              "type": "lien",
+              "url": "https://parlonsesport.com/wipr-a-la-lyon-esport-le-mercato-valorant-est-exceptionnel-en-cette-off-season/",
+              "image": "assets/uploads/1795514295161-minia-article-wir.jpg"
+            },
+            {
               "title": "BrokenBlade : « Il y avait beaucoup de fans G2 Esports au LEC Roadtrip de Paris »",
               "date": "2026-08-02",
               "game": "League of Legends",
