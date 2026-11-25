@@ -66,6 +66,19 @@
           "color": "teal",
           "articles": [
             {
+              "title": "https://parlonsesport.com/try-hard-sur-arte-paul-bouvier-raconte-les-sept-annees-de-travail-derriere-le-documentaire-sur-counter-strike/",
+              "date": "2026-11-25",
+              "game": "CS2",
+              "event": "",
+              "type": "lien",
+              "url": "https://parlonsesport.com/try-hard-sur-arte-paul-bouvier-raconte-les-sept-annees-de-travail-derriere-le-documentaire-sur-counter-strike/",
+              "image": "assets/uploads/1795626806109-minia-article-try-hard-def.jpg",
+              "imageCredit": "Arte, Solent production et gwash. ",
+              "mode": "interview",
+              "fav": true,
+              "favNote": ""
+            },
+            {
               "title": "WiPR à la Lyon Esport : « Le mercato [VALORANT] est exceptionnel en cette off-season »",
               "date": "2026-11-22",
               "game": "Valorant",
