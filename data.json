@@ -58,7 +58,7 @@
       "name": "Parlons Esport",
       "role": "Journaliste",
       "logo": "assets/uploads/1795168526754-parlonsesport-logo.jpg",
-      "description": "Média esport francophone. Interviews de joueurs, suivi de compétitions et actualités, principalement sur League of Legends, Valorant et CS2.",
+      "description": "Média esport français. Interviews de joueurs, suivi de compétitions et actualités, principalement sur League of Legends, Valorant, CS2 Rocket League et Call of Duty.",
       "categories": [
         {
           "id": "interviews",
@@ -380,7 +380,7 @@
       "name": "Matepedia",
       "role": "Rédacteur",
       "logo": "assets/uploads/1795168573864-logom8pedia.jpg",
-      "description": "Site fan dédié à Gentle Mates, mes premières publications esport.",
+      "description": "Site fan dédié à Gentle Mates, mes premiers travaux et premières publications esport.",
       "categories": [
         {
           "id": "articles",
