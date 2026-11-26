@@ -264,6 +264,19 @@
           "color": "sun",
           "articles": [
             {
+              "title": "RECAP. Tous les rosters dévoilés à la Keynote 2027 de Gentle Mates",
+              "date": "2026-11-26",
+              "game": "",
+              "event": "Gentle Mates Keynote",
+              "type": "lien",
+              "url": "https://parlonsesport.com/recap-tous-les-rosters-devoiles-a-la-keynote-2027-de-gentle-mates/",
+              "image": "assets/uploads/1795676665873-keynote-credite-2027-m8.jpg",
+              "imageCredit": "Gentle Mates",
+              "mode": "",
+              "fav": false,
+              "favNote": ""
+            },
+            {
               "title": "HyDra et Scrap chez FaZe : le premier domino du mercato est tombé",
               "date": "2026-09-15",
               "game": "Call of Duty",
